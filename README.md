@@ -3,7 +3,7 @@
 [You can see some interesting examples on the project homepage.](https://air-discover.github.io/Ultraman/)
 
 
-## [🗂Project Page](https://air-discover.github.io/Ultraman/) | [![GitHub Repo Stars](https://img.shields.io/github/stars/tomorrow1238/Ultraman?label=stars&logo=github&color=brightgreen)](https://github.com/tomorrow1238/Ultraman) | [![arXiv](https://img.shields.io/badge/arXiv-2403.12028-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2403.12028)
+## [🗂Project Page](https://air-discover.github.io/Ultraman/) | [![arXiv](https://img.shields.io/badge/arXiv-2403.12028-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2403.12028)
 
 <a href="https://github.com/tomorrow1238" target="_blank">Mingjin Chen, </a>
 <a href="https://scholar.google.com/citations?hl=en&user=uVMnzPMAAAAJ" target="_blank">Junhao Chen, </a>
