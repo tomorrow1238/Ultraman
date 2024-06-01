@@ -95,13 +95,15 @@ Then, you can generate texture with following code:
 
 ## 🗓ToDO List
 <!-- ✅ -->
-✅ 1. Release offline version of Ultraman implementation
+✅ 1. Release offline version of Ultraman based on 2K2K
 
-🔘 2. Further improvement of efficiency and robustness.
+🔘 2. Release offline version of Ultraman based on ECON
 
-🔘 3. Find a better seam smoothing method.
+🔘 3. Further improvement of efficiency and robustness.
 
-🔘 4. Release of evaluation protocols code for comparison.
+🔘 4. Find a better seam smoothing method.
+
+🔘 5. Release of evaluation protocols code for comparison.
 
 
 ## 📜Cite
