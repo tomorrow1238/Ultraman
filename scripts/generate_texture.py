@@ -404,32 +404,32 @@ if __name__ == "__main__":
         cleanup_path = os.path.join(cleanup_dir, "{}.png".format(view_idx))
 
         #seam smooth part
-        # if view_idx >= 5:
-        #     old_mask_path = os.path.join(mask_image_dir, "{}_old.png".format(view_idx))
-        #     new_mask_path = os.path.join(mask_image_dir, "{}_update.png".format(view_idx))
-        #     old_mask = cv2.imread(old_mask_path, cv2.IMREAD_GRAYSCALE)
-        #     new_mask = cv2.imread(new_mask_path, cv2.IMREAD_GRAYSCALE)
-        #     get_canny(old_mask, new_mask, canny_path)
+        if view_idx >= 5:
+            old_mask_path = os.path.join(mask_image_dir, "{}_old.png".format(view_idx))
+            new_mask_path = os.path.join(mask_image_dir, "{}_update.png".format(view_idx))
+            old_mask = cv2.imread(old_mask_path, cv2.IMREAD_GRAYSCALE)
+            new_mask = cv2.imread(new_mask_path, cv2.IMREAD_GRAYSCALE)
+            get_canny(old_mask, new_mask, canny_path)
 
-        #     get_processed_canny(canny_path, canny_processed_path)
+            get_processed_canny(canny_path, canny_processed_path)
             
-        #     get_cleanup(inter_image_path, canny_processed_path, cleanup_dir, view_idx)
+            get_cleanup(inter_image_path, canny_processed_path, cleanup_dir, view_idx)
             
-        #     clean_image = Image.open(cleanup_path)
+            clean_image = Image.open(cleanup_path)
             
-        #     init_texture, project_mask_image, exist_texture = backproject_from_image(
-        #         mesh, faces, new_verts_uvs, cameras, 
-        #         clean_image, all_mask_image, all_mask_image, init_texture, exist_texture, 
-        #         args.image_size * args.render_simple_factor, args.uv_size, args.fragment_k,
-        #         DEVICE
-        #     )
+            init_texture, project_mask_image, exist_texture = backproject_from_image(
+                mesh, faces, new_verts_uvs, cameras, 
+                clean_image, all_mask_image, all_mask_image, init_texture, exist_texture, 
+                args.image_size * args.render_simple_factor, args.uv_size, args.fragment_k,
+                DEVICE
+            )
             
-        #     # update the mesh
-        #     mesh.textures = TexturesUV(
-        #         maps=transforms.ToTensor()(init_texture)[None, ...].permute(0, 2, 3, 1).to(DEVICE),
-        #         faces_uvs=faces.textures_idx[None, ...],
-        #         verts_uvs=new_verts_uvs[None, ...]
-        #     )
+            # update the mesh
+            mesh.textures = TexturesUV(
+                maps=transforms.ToTensor()(init_texture)[None, ...].permute(0, 2, 3, 1).to(DEVICE),
+                faces_uvs=faces.textures_idx[None, ...],
+                verts_uvs=new_verts_uvs[None, ...]
+            )
 
         # 1.4. save generated assets
         # save backprojected OBJ file
