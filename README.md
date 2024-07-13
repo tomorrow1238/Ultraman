@@ -129,3 +129,7 @@ We have intensively borrow codes from the following repositories. Many thanks to
 [ControlNet](https://github.com/lllyasviel/ControlNet)
 
 
+
+## ⭐️ Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=tomorrow1238/Ultraman&type=Date)](https://star-history.com/#tomorrow1238/Ultraman&Date)
